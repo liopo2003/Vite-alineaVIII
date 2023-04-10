@@ -11,7 +11,7 @@ export default function Layout() {
 
   const router = createBrowserRouter([
     {
-      path: "/vite-alineaVIII/",
+      path: "/",
       element: (
         <>
         
