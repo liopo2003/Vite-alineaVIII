@@ -9,28 +9,15 @@ import Sidebar from './SideBar';
 
 export default function Layout() {
 
-  const router = createHashRouter([
-    {
-      path: "/",
-      element: (
-        <>
-        
-          <Navbar />
-          <Sidebar />
-          <div className='outlet'>
-            <Outlet />
-          </div>
-        </>
-      ),
-      errorElement: <ErrorPage />,
-      children: [
-        { path: "/Pagina1", element: <Pagina1/> },
-        { path: "/Pagina2", element: <Pagina2 /> },
-        { path: "/Pagina3", element: <Pagina3 /> }
-      ]
-    },
-  ]);
   return (
-    <RouterProvider router={router} />
+    <>
+        
+    <Navbar />
+    <Sidebar />
+    <div className='outlet'>
+      <Outlet />
+    </div>
+  </>
   )
+
 }
